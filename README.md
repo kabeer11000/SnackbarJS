@@ -21,9 +21,11 @@ JS Deliever [Here](https://cdn.jsdelivr.net/gh/kabeer11000/snackarjs@master/dist
 K Avatar Js doesnot need extra JS code to instantiate. Just Call Snackbar Function
 CallbackFunction, Message are Important. Others are Optional Parameters
 
-#Basic Syntax
+###Basic Syntax
 
-```Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction)```
+```
+Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction)
+```
 
 
 ### Examples
@@ -91,3 +93,4 @@ $(".two").on("click", () => {
 ```:root{
     --snackbar_action : red;
 }```
+Want beter Documentation? [kabeersnetwork.dx.am/apis#item-14](http://kabeersnetwork.dx.am/apis#item-14)
