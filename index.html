@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Snackbarjs by kabeer11000</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Snackbarjs</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/kabeer11000/SnackbarJS">View the Project on GitHub <small>kabeer11000/SnackbarJS</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/kabeer11000/SnackbarJS/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/kabeer11000/SnackbarJS/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/kabeer11000/SnackbarJS">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h3>
+<a id="snackbar-js" class="anchor" href="#snackbar-js" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SnackBar JS.</h3>
+<p>Material Desgin Snackbars with Callbacks and Actions. With the new Kabeers Snackbar JS. Dependancy Free. Small and easy to use</p>
+<h3>
+<a id="introduction" class="anchor" href="#introduction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Introduction</h3>
+<p>Snackbars inform users of a process that an app has performed or will perform. They appear temporarily, towards the bottom of the screen. They shouldn’t interrupt the user experience, and they don’t require user input to disappear.</p>
+<p>More Information and Documentation about Snackbars at <a href="https://material.io/components/snackbars#anatomy">material.io/components/snackbar</a></p>
+<h3>
+<a id="get-snackbar-js" class="anchor" href="#get-snackbar-js" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Get SnackBar JS</h3>
+<p>SnackBar JS is available from JS Delivr, Kabeers CDNs, and Our AJAX Libraries Registery
+Snackbar Requires JS files plus its Custom CSS files (Snackbar CSS)</p>
+<p>Kabeers Network CDN Page <a href="http://kabeersnetwork.dx.am/cdn?item=kabeers+Snackbar%20js">Here</a></p>
+<p>AJAX Libs CDNs (Kabeers Network NPM Registery) Click <a href="http://ajax-libs.kabeersnetwork.rf.gd/">Here</a></p>
+<p>JS Deliever <a href="https://cdn.jsdelivr.net/gh/kabeer11000/snackarjs@master/dist/snackbar.min.js">Here</a></p>
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage</h3>
+<p>K Avatar Js doesnot need extra JS code to instantiate. Just Call Snackbar Function
+CallbackFunction, Message are Important. Others are Optional Parameters</p>
+<p>#Basic Syntax</p>
+<p><code>Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction)</code></p>
+<h3>
+<a id="examples" class="anchor" href="#examples" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Examples</h3>
+<p>Snackbar Supports Both Vanilla Javascript Jquery or any other Selector Engine,</p>
+<pre lang="&lt;script&gt;"><code>
+//Vanilla Javascript
+
+document.querySelector(".one").addEventListener("click", () =&gt; {
+  Snackbar({ message: "Hello! I am a Simple &amp; Plain Snackbar!"});
+});
+
+document.querySelector(".two").addEventListener("click", () =&gt; {
+	Snackbar({
+		message: "Hello! I am a Snackbar with All Features Possiable!",
+		actiontext: "Redo", 
+		time:500
+	}, () =&gt; {
+		alert("Snackbar Action Button Clicked");
+	}, () =&gt; {
+		console.log('beforeShow')
+	}, () =&gt; {
+		console.log('AfterShow')
+	});
+});
+
+//JQuery
+
+$(".one").on("click", () =&gt; {
+  Snackbar({ message: "Hello! I am a Simple &amp; Plain Snackbar!"});
+});
+
+$(".two").on("click", () =&gt; {
+	Snackbar({
+		message: "Hello! I am a Snackbar with All Features Possiable!",
+		actiontext: "Redo", 
+		time:500
+	}, () =&gt; {
+		alert("Snackbar Action Button Clicked");
+	}, () =&gt; {
+		console.log('beforeShow')
+	}, () =&gt; {
+		console.log('AfterShow')
+	});
+});
+
+
+&lt;/script&gt;```
+
+### Tips
+```Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async () =&gt; {
+	alert('CallBack Functions Can Be Called Async!')
+}))```
+
+### ES5 Support
+```Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async function () {
+	alert('CallBack Functions Can Be Called Async!')
+}))
+</code></pre>
+<h3>
+<a id="import-as-umd-module-es6-modules" class="anchor" href="#import-as-umd-module-es6-modules" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Import as UMD Module (ES6 Modules)</h3>
+<p><code>import {Snackbar} from './path/to/snackbar.umd.js';</code></p>
+<h3>
+<a id="change-snackbar-action-color-css" class="anchor" href="#change-snackbar-action-color-css" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Change Snackbar Action Color (CSS)</h3>
+<pre lang=":root{"><code>    --snackbar_action : red;
+}```
+</code></pre>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/kabeer11000">kabeer11000</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
