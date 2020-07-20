@@ -1,4 +1,4 @@
-### SnackBar JS.
+# SnackBar JS.
 Material Desgin Snackbars with Callbacks and Actions. With the new Kabeers Snackbar JS. Dependancy Free. Small and easy to use
 
 
