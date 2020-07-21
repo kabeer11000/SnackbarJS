@@ -23,9 +23,7 @@ CallbackFunction, Message are Important. Others are Optional Parameters
 
 ###Basic Syntax
 
-```
-Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction)
-```
+```Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction)```
 
 
 ### Examples
@@ -74,13 +72,14 @@ $(".two").on("click", () => {
 });
 
 
-</script>```
+</script>
+```
 
 ### Tips
 ```Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async () => {
 	alert('CallBack Functions Can Be Called Async!')
-}))```
-
+}))
+```
 ### ES5 Support
 ```Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async function () {
 	alert('CallBack Functions Can Be Called Async!')
@@ -90,8 +89,9 @@ $(".two").on("click", () => {
 ```import {Snackbar} from './path/to/snackbar.umd.js';```
 
 ### Change Snackbar Action Color (CSS)
-```:root{
+```
+:root{
     --snackbar_action : red;
-}```
+}
 ```
 Want beter Documentation? [kabeersnetwork.dx.am/apis#item-14](http://kabeersnetwork.dx.am/apis#item-14)
