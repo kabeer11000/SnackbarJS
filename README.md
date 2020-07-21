@@ -76,12 +76,14 @@ $(".two").on("click", () => {
 ```
 
 ### Tips
-```Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async () => {
+```
+Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async () => {
 	alert('CallBack Functions Can Be Called Async!')
 }))
 ```
 ### ES5 Support
-```Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async function () {
+```
+Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async function () {
 	alert('CallBack Functions Can Be Called Async!')
 }))
 ```
