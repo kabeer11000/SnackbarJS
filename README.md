@@ -23,13 +23,16 @@ CallbackFunction, Message are Important. Others are Optional Parameters
 
 ### Basic Syntax
 
-```Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction)```
+```
+Snackbar({message: "Snackbar message", actiontext: 'Button Text', time:500}, CallbackFunction, beforeShowFunction, afterShowFunction);
+```
 
 
 ### Examples
 Snackbar Supports Both Vanilla Javascript Jquery or any other Selector Engine,
 
-```<script>
+```
+<script>
 
 //Vanilla Javascript
 
@@ -88,7 +91,9 @@ Snackbar({messange: "Snackbar message", actiontext: 'Button Text'}, async functi
 }))
 ```
 ### Import as UMD Module (ES6 Modules)
-```import {Snackbar} from './path/to/snackbar.umd.js';```
+```
+import {Snackbar} from './path/to/snackbar.umd.js';
+```
 
 ### Change Snackbar Action Color (CSS)
 ```
